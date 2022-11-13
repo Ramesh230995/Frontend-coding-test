@@ -1,0 +1,111 @@
+.mainLayout{
+  padding: 20px;
+}
+.contentNavbar{
+  background-color: bisque;
+}
+.contentNavbar span{
+   margin-left: 60%;
+}
+.search{
+  width: 20%;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid;
+  margin: 10px;
+}
+.sort{
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.gridContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px;
+
+}
+.card{
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: azure;
+}
+
+.text{
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:98%;
+  border: 1px solid #ddd;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.image{ 
+  margin-left: 30%;
+}
+.pagination{
+ float: right;
+}
+.tableContainer{
+margin-left: 2%;
+margin-bottom: 20px;
+}
+.nodata{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .contentNavbar span{
+    margin-left:40px;
+ }
+ .gridContainer{
+  display: grid;
+  grid-template-columns: auto ;
+ }
+ .search{
+  padding: 5px;
+}
+table{
+  width:fit-content;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .contentNavbar span{
+    margin-left: 40%;
+ }
+ .gridContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+ }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contentNavbar span{
+    margin-left: 50%;
+ }
+ .gridContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+ }
+}
